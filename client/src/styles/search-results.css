@@ -1,0 +1,376 @@
+/* Search Results Styles */
+.search-results {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 2rem 0;
+}
+
+.search-results-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.search-summary {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-summary-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-summary-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.search-summary-route {
+  font-size: 1.125rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-summary-route-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.search-summary-date,
+.search-summary-class {
+  color: #6b7280;
+}
+
+.search-summary-modify {
+  background-color: #1e40af;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  align-self: flex-start;
+}
+
+.search-summary-modify:hover {
+  background-color: #1d4ed8;
+}
+
+.class-filter {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.class-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.class-filter-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.class-filter-button.active {
+  background-color: #1e40af;
+  color: white;
+}
+
+.class-filter-button:not(.active) {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.class-filter-button:not(.active):hover {
+  background-color: #e5e7eb;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.loading-spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #e5e7eb;
+  border-top: 2px solid #1e40af;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+.loading-text {
+  color: #6b7280;
+}
+
+.train-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.train-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.train-card-content {
+  padding: 1.5rem;
+}
+
+.train-card-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.train-info {
+  grid-column: span 3;
+}
+
+.train-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #111827;
+}
+
+.train-number {
+  color: #6b7280;
+}
+
+.train-amenities {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.train-amenity-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #059669;
+}
+
+.train-timing {
+  grid-column: span 3;
+}
+
+.train-timing-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.train-timing-station {
+  text-align: center;
+}
+
+.train-timing-time {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.train-timing-station-name {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.train-timing-duration {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.train-timing-duration-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #9ca3af;
+  margin: 0 auto 0.25rem;
+}
+
+.train-timing-duration-text {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.train-availability {
+  grid-column: span 4;
+}
+
+.train-availability-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.train-availability-item h4 {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.train-availability-status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.train-availability-status.available {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.train-availability-status.waiting {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.train-availability-status.rac {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.train-fare {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.train-unavailable {
+  color: #6b7280;
+}
+
+.train-book-button {
+  grid-column: span 2;
+}
+
+.train-book-btn {
+  width: 100%;
+  background-color: #f97316;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.train-book-btn:hover {
+  background-color: #ea580c;
+}
+
+.train-book-btn:disabled {
+  background-color: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.no-results-text {
+  color: #6b7280;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.no-results-button {
+  background-color: #1e40af;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.no-results-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .search-summary-content {
+    gap: 0.5rem;
+  }
+  
+  .search-summary-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .search-summary-route {
+    font-size: 1rem;
+  }
+  
+  .class-filter-buttons {
+    justify-content: center;
+  }
+  
+  .train-card-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .train-info,
+  .train-timing,
+  .train-availability,
+  .train-book-button {
+    grid-column: span 1;
+  }
+  
+  .train-timing-content {
+    justify-content: space-around;
+  }
+  
+  .train-availability-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .train-card-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .train-info {
+    grid-column: span 2;
+  }
+  
+  .train-timing {
+    grid-column: span 2;
+  }
+  
+  .train-availability {
+    grid-column: span 1;
+  }
+  
+  .train-book-button {
+    grid-column: span 1;
+  }
+}

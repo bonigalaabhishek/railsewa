@@ -1,0 +1,11 @@
+@import './styles/global.css';
+@import './styles/header.css';
+@import './styles/footer.css';
+@import './styles/homepage.css';
+@import './styles/search-results.css';
+@import './styles/auth.css';
+@import './styles/pnr-status.css';
+@import './styles/booking-history.css';
+@import './styles/passenger-details.css';
+@import './styles/payment.css';
+@import './styles/booking-confirmation.css';

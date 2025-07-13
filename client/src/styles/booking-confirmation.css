@@ -1,0 +1,370 @@
+/* Booking Confirmation Styles */
+.booking-confirmation {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 2rem 0;
+}
+
+.booking-confirmation-container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.confirmation-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.confirmation-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.confirmation-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #10b981;
+}
+
+.confirmation-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.confirmation-subtitle {
+  color: #6b7280;
+}
+
+.pnr-section {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pnr-content {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.pnr-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.pnr-message {
+  color: #6b7280;
+}
+
+.pnr-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.pnr-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pnr-action-btn.download {
+  background-color: #1e40af;
+  color: white;
+}
+
+.pnr-action-btn.download:hover {
+  background-color: #1d4ed8;
+}
+
+.pnr-action-btn.share {
+  background-color: #10b981;
+  color: white;
+}
+
+.pnr-action-btn.share:hover {
+  background-color: #059669;
+}
+
+.pnr-action-btn.history {
+  background-color: #6b7280;
+  color: white;
+}
+
+.pnr-action-btn.history:hover {
+  background-color: #4b5563;
+}
+
+.pnr-action-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.details-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.details-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.journey-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.journey-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.journey-detail-icon-container {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.journey-detail-icon-container.blue {
+  background-color: #dbeafe;
+}
+
+.journey-detail-icon-container.green {
+  background-color: #d1fae5;
+}
+
+.journey-detail-icon-container.orange {
+  background-color: #fed7aa;
+}
+
+.journey-detail-icon-container.purple {
+  background-color: #e9d5ff;
+}
+
+.journey-detail-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.journey-detail-icon.blue {
+  color: #1e40af;
+}
+
+.journey-detail-icon.green {
+  color: #059669;
+}
+
+.journey-detail-icon.orange {
+  color: #ea580c;
+}
+
+.journey-detail-icon.purple {
+  color: #7c3aed;
+}
+
+.journey-detail-content- p:first-child {
+  font-weight: 600;
+  margin: 0;
+}
+
+.journey-detail-content p:last-child {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.payment-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.payment-detail-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-detail-divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 0.75rem 0;
+}
+
+.payment-detail-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.payment-total-amount {
+  color: #10b981;
+}
+
+.payment-status {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 0.5rem;
+}
+
+.payment-status-title {
+  color: #065f46;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.payment-status-text {
+  color: #047857;
+  font-size: 0.875rem;
+}
+
+.passenger-details-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.passenger-details-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.passenger-table-container {
+  overflow-x: auto;
+}
+
+.passenger-table {
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+.passenger-table th {
+  text-align: left;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.passenger-table td {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.passenger-table-name {
+  font-weight: 500;
+}
+
+.passenger-status-badge {
+  padding: 0.25rem 0.5rem;
+  background-color: #d1fae5;
+  color: #065f46;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.important-info {
+  background-color: #dbeafe;
+  border: 1px solid #93c5fd;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.important-info-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 0.75rem;
+}
+
+.important-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navigation-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.navigation-button {
+  background-color: #1e40af;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.navigation-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .pnr-actions {
+    flex-direction: column;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .journey-details-list {
+    gap: 0.75rem;
+  }
+  
+  .passenger-table {
+    font-size: 0.75rem;
+  }
+  
+  .passenger-table th,
+  .passenger-table td {
+    padding: 0.375rem 0.25rem;
+  }
+}
+
+@media (min-width: 641px) {
+  .pnr-actions {
+    flex-direction: row;
+  }
+}

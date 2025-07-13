@@ -1,0 +1,389 @@
+/* Homepage Styles */
+.homepage {
+  min-height: 100vh;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 50%, #1e3a8a 100%);
+  color: white;
+  padding: 4rem 0;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-content {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-title {
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #bfdbfe;
+}
+
+.search-form-container {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.search-form {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+}
+
+.search-form-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  align-items: end;
+}
+
+.search-form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form-field.from {
+  grid-column: span 3;
+}
+
+.search-form-field.swap {
+  grid-column: span 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-form-field.to {
+  grid-column: span 3;
+}
+
+.search-form-field.date {
+  grid-column: span 2;
+}
+
+.search-form-field.class {
+  grid-column: span 2;
+}
+
+.search-form-field.submit {
+  grid-column: span 1;
+}
+
+.search-form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.search-form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  color: #111827;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.search-form-input:focus {
+  outline: none;
+  border-color: #1e40af;
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.search-form-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  color: #111827;
+  font-size: 1rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.search-form-select:focus {
+  outline: none;
+  border-color: #1e40af;
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.swap-button {
+  padding: 0.5rem;
+  background-color: #f3f4f6;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.swap-button:hover {
+  background-color: #e5e7eb;
+}
+
+.swap-button-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #6b7280;
+}
+
+.search-button {
+  width: 100%;
+  background-color: #f97316;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  background-color: #ea580c;
+}
+
+.search-button-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.popular-routes-section {
+  padding: 4rem 0;
+  background-color: #f9fafb;
+}
+
+.popular-routes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.popular-routes-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  color: #111827;
+  margin-bottom: 3rem;
+}
+
+.popular-routes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.popular-route-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.popular-route-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.popular-route-content {
+  text-align: center;
+}
+
+.popular-route-from {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.popular-route-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #1e40af;
+  margin: 0 auto 0.5rem;
+}
+
+.popular-route-to {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.popular-route-code {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.features-section {
+  padding: 4rem 0;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.features-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  color: #111827;
+  margin-bottom: 3rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-icon-container {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.feature-icon-container.blue {
+  background-color: #dbeafe;
+}
+
+.feature-icon-container.green {
+  background-color: #d1fae5;
+}
+
+.feature-icon-container.orange {
+  background-color: #fed7aa;
+}
+
+.feature-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.feature-icon.blue {
+  color: #1e40af;
+}
+
+.feature-icon.green {
+  color: #059669;
+}
+
+.feature-icon.orange {
+  color: #ea580c;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.feature-description {
+  color: #6b7280;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .search-form {
+    padding: 1.5rem;
+  }
+  
+  .search-form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .search-form-field {
+    grid-column: span 1 !important;
+  }
+  
+  .search-form-field.swap {
+    order: 3;
+  }
+  
+  .search-form-field.to {
+    order: 4;
+  }
+  
+  .search-form-field.date {
+    order: 5;
+  }
+  
+  .search-form-field.class {
+    order: 6;
+  }
+  
+  .search-form-field.submit {
+    order: 7;
+  }
+  
+  .popular-routes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .search-form-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .search-form-field.from {
+    grid-column: span 2;
+  }
+  
+  .search-form-field.to {
+    grid-column: span 2;
+  }
+  
+  .search-form-field.date {
+    grid-column: span 3;
+  }
+  
+  .search-form-field.class {
+    grid-column: span 2;
+  }
+  
+  .search-form-field.submit {
+    grid-column: span 1;
+  }
+}

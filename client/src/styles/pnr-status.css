@@ -1,0 +1,450 @@
+/* PNR Status Styles */
+.pnr-status {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 2rem 0;
+}
+
+.pnr-container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.pnr-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pnr-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.pnr-subtitle {
+  color: #6b7280;
+}
+
+.pnr-search-form {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pnr-search-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pnr-search-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.pnr-search-field {
+  flex: 1;
+}
+
+.pnr-search-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.pnr-search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.pnr-search-input:focus {
+  outline: none;
+  border-color: #1e40af;
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.pnr-search-button-container {
+  display: flex;
+  align-items: end;
+}
+
+.pnr-search-button {
+  background-color: #1e40af;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pnr-search-button:hover {
+  background-color: #1d4ed8;
+}
+
+.pnr-search-button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.pnr-search-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.pnr-error {
+  margin-top: 1rem;
+  color: #dc2626;
+  font-size: 0.875rem;
+}
+
+.pnr-demo {
+  background-color: #dbeafe;
+  border: 1px solid #93c5fd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pnr-demo-text {
+  color: #1d4ed8;
+  font-size: 0.875rem;
+}
+
+.pnr-loading {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.pnr-loading-spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #e5e7eb;
+  border-top: 2px solid #1e40af;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+.pnr-loading-text {
+  color: #6b7280;
+}
+
+.pnr-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pnr-train-details {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.pnr-train-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.pnr-train-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.pnr-chart-status {
+  padding: 0.5rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.pnr-chart-status.prepared {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.pnr-chart-status.not-prepared {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.pnr-train-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.pnr-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pnr-info-icon-container {
+  background-color: #dbeafe;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.pnr-info-icon-container.blue {
+  background-color: #dbeafe;
+}
+
+.pnr-info-icon-container.green {
+  background-color: #d1fae5;
+}
+
+.pnr-info-icon-container.orange {
+  background-color: #fed7aa;
+}
+
+.pnr-info-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.pnr-info-icon.blue {
+  color: #1e40af;
+}
+
+.pnr-info-icon.green {
+  color: #059669;
+}
+
+.pnr-info-icon.orange {
+  color: #ea580c;
+}
+
+.pnr-info-content p:first-child {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.pnr-info-content p:last-child {
+  font-weight: 600;
+  margin: 0;
+}
+
+.pnr-route {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.pnr-route-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pnr-route-station {
+  text-align: center;
+}
+
+.pnr-route-station p:first-child {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.pnr-route-station p:last-child {
+  font-weight: 600;
+  margin: 0;
+}
+
+.pnr-route-arrow {
+  color: #9ca3af;
+}
+
+.pnr-passengers {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.pnr-passengers-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.pnr-passengers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pnr-passenger-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.pnr-passenger-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+.pnr-passenger-info p:first-child {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.pnr-passenger-info p:nth-child(2) {
+  font-weight: 600;
+  margin: 0;
+}
+
+.pnr-passenger-info p:last-child {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.pnr-passenger-status {
+  text-align: center;
+}
+
+.pnr-passenger-status p:first-child {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.pnr-status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.pnr-status-badge.confirmed {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.pnr-status-badge.waiting {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.pnr-status-badge.rac {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.pnr-passenger-seat {
+  text-align: center;
+}
+
+.pnr-passenger-seat p:first-child {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.pnr-passenger-seat p:last-child {
+  font-weight: 600;
+  margin: 0;
+}
+
+.pnr-status-guide {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.pnr-guide-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.pnr-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.pnr-guide-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pnr-guide-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.pnr-guide-dot.green {
+  background-color: #10b981;
+}
+
+.pnr-guide-dot.yellow {
+  background-color: #f59e0b;
+}
+
+.pnr-guide-dot.red {
+  background-color: #ef4444;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .pnr-search-row {
+    flex-direction: column;
+  }
+  
+  .pnr-search-button-container {
+    align-items: stretch;
+  }
+  
+  .pnr-train-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .pnr-route-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .pnr-passenger-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .pnr-guide-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,342 @@
+/* Payment Styles */
+.payment {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 2rem 0;
+}
+
+.payment-container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.payment-header {
+  margin-bottom: 2rem;
+}
+
+.payment-back {
+  display: flex;
+  align-items: center;
+  color: #1e40af;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: color 0.2s ease;
+}
+
+.payment-back:hover {
+  color: #1d4ed8;
+}
+
+.payment-back-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.payment-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.payment-subtitle {
+  color: #6b7280;
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.payment-methods {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.payment-methods-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.payment-tabs {
+  display: flex;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.payment-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: none;
+}
+
+.payment-tab.active {
+  background-color: white;
+  color: #1e40af;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.payment-tab:not(.active) {
+  color: #6b7280;
+}
+
+.payment-tab-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.payment-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-field-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.payment-field-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.payment-field-input:focus {
+  outline: none;
+  border-color: #1e40af;
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.payment-field-input.error {
+  border-color: #dc2626;
+}
+.payment-field-border-red{
+    border-color: red;
+}
+.payment-field-border-gray{
+    border-color: gray;
+}
+.payment-field-select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.payment-field-select:focus {
+  outline: none;
+  border-color: #1e40af;
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.payment-field-error {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.payment-field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.payment-security {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 0.5rem;
+}
+
+.payment-security-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.payment-security-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #059669;
+}
+
+.payment-security-title {
+  font-size: 0.875rem;
+  color: #065f46;
+  font-weight: 500;
+}
+
+.payment-security-text {
+  font-size: 0.875rem;
+  color: #047857;
+  margin-top: 0.25rem;
+}
+
+.payment-error {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+}
+
+.payment-error-text {
+  color: #b91c1c;
+  font-size: 0.875rem;
+}
+
+.booking-summary {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  position: sticky;
+  top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.booking-summary-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.booking-summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.booking-summary-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-summary-train {
+  font-weight: 500;
+}
+
+.booking-summary-train-number {
+  color: #6b7280;
+}
+
+.booking-summary-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking-summary-divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 0.5rem 0;
+}
+
+.booking-summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.payment-button {
+  width: 100%;
+  margin-top: 1.5rem;
+  background-color: #f97316;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.payment-button:hover {
+  background-color: #ea580c;
+}
+
+.payment-button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.payment-button-spinner {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.payment-button-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .payment-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .booking-summary {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .payment-tabs {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .payment-tab {
+    justify-content: flex-start;
+  }
+  
+  .payment-field-row {
+    grid-template-columns: 1fr;
+  }
+}
