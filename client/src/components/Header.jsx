@@ -36,7 +36,7 @@ const Header = () => {
           </Link>
 
           <nav className="header-nav">
-            <Link to="/" className="header-nav-link">Home zhdvs</Link>
+            <Link to="/" className="header-nav-link">Home</Link>
             <Link to="/pnr-status" className="header-nav-link">PNR Status</Link>
             <Link to="/booking-history" className="header-nav-link">Booking History</Link>
           </nav>
